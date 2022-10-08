@@ -5,7 +5,7 @@ DISCLAIMER: I DELETED ALL OF THE CONNECTIONS FOR GRANT SEARLE'S VIDEO+KEYBOARD I
 
 I made this Modified version of Ben Eater's 6502 computer PCB and decided instead of adding a VGA video card, I wanted to connect this to a CRT monitor using a composite video cable. 
 I decided to add in a 6551 ACIA (Asyncronous Communications Interface Adapter) to give the computer serial I/O capabilites. I then found Grant Searle's video+keyboard interface and decided to incorporate that into my design. 
-The only issue was that my 6551 was sending and receiving data at 19200 baud, and the video+keyboard interface was running at 115200 baud. Luckily it was an easy fix to go into the software and update the USARD_BAUD variable from 115200u1 to 19200u1. 
+The only issue was that my 6551 was sending and receiving data at 19200 baud, and the video+keyboard interface was running at 115200 baud. Luckily it was an easy fix to go into the software and update the USART_BAUD variable from 115200u1 to 19200u1. 
 However, before uploading the code I changed the fuse bytes to ensure that the 2 AVR chips were running at the correct crystal oscillator frequencies. 
 To upload the code for the keyboard chip I used WinAVR. I found that before uploading the keyboard interface code, I needed to change the file name to main.c and I also had to create my own makefile for the atmega328p. 
 For the video chip I decided to use the .hex file burn that directly into the other atmega328p using the command line. 
