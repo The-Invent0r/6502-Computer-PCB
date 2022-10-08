@@ -8,7 +8,7 @@ I decided to add in a 6551 ACIA (Asyncronous Communications Interface Adapter) t
 The only issue was that my 6551 was sending and receiving data at 19200 baud, and the video+keyboard interface was running at 115200 baud. Luckily it was an easy fix to go into the software and update the USART_BAUD variable from 115200u1 to 19200u1. 
 However, before uploading the code I changed the fuse bytes to ensure that the 2 AVR chips were running at the correct crystal oscillator frequencies. 
 To upload the code for the keyboard chip I used WinAVR. I found that before uploading the keyboard interface code, I needed to change the file name to main.c and I also had to create my own makefile for the atmega328p. 
-For the video chip I decided to use the .hex file burn that directly into the other atmega328p using the command line. 
+For the video chip I decided to use the .hex file, and burn that directly into the other atmega328p using the command line. 
 When I first prototyped this circuit on breadboards I had a lot of issues which I later discovered were caused by using a low quality breadboard. So if all off your connections and software are correct, try using a more expensive but higher quality BB830 breadboard.
 When you first connect the circuit to an LCD screen you should see a cursor blinking. In order to conduct a loopback test of the circuit, simply connect the Rx pin to the Tx pin on the keyboard chip, then connect the PS2 keyboard and start typing. If it works then you'll see the correct characters on the screen.
 
