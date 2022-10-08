@@ -1,0 +1,1 @@
+I've removed all the connections between the two Atmega328p chips and the 74HC166 chip since the design is copyrighted. But all the connections can be found on Grant Searle's website (http://searle.x10host.com/MonitorKeyboard/index.html) along with instructions on how to connect them to your specific display.
