@@ -12,5 +12,7 @@ For the video chip I decided to use the .hex file burn that directly into the ot
 When I first prototyped this circuit on breadboards I had a lot of issues which I later discovered were caused by using a low quality breadboard. So if all off your connections and software are correct, try using a more expensive but higher quality BB830 breadboard.
 When you first connect the circuit to an LCD screen you should see a cursor blinking. In order to conduct a loopback test of the circuit, simply connect the Rx pin to the Tx pin on the keyboard chip, then connect the PS2 keyboard and start typing. If it works then you'll see the correct characters on the screen.
 
+I also made a short YouTube video demonstrating the workings (https://www.youtube.com/watch?v=8I7XNCFC5iU)
+
 ![20220930_150136](https://user-images.githubusercontent.com/29239243/194722983-07c7fe45-ddef-48b9-b235-9b804303eea0.jpg)
 ![20220930_170826](https://user-images.githubusercontent.com/29239243/194722992-ca49237b-6e60-4c9b-8efe-6a2a17eb0fa9.jpg)
