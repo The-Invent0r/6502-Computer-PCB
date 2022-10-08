@@ -10,7 +10,7 @@ However, before uploading the code I changed the fuse bytes to ensure that the 2
 To upload the code for the keyboard chip I used WinAVR. I found that before uploading the keyboard interface code, I needed to change the file name to main.c and I also had to create my own makefile for the atmega328p. 
 For the video chip I decided to use the .hex file, and burn that directly into the other atmega328p using the command line. 
 When I first prototyped this circuit on breadboards I had a lot of issues which I later discovered were caused by using a low quality breadboard. So if all off your connections and software are correct, try using a more expensive but higher quality BB830 breadboard.
-When you first connect the circuit to an LCD screen you should see a cursor blinking. In order to conduct a loopback test of the circuit, simply connect the Rx pin to the Tx pin on the keyboard chip, then connect the PS2 keyboard and start typing. If it works then you'll see the correct characters on the screen.
+When you first connect the circuit to an LCD monitor or CRT monitor you should see a cursor blinking. In order to conduct a loopback test of the circuit, simply connect the Rx pin to the Tx pin on the keyboard chip, then connect the PS2 keyboard and start typing. If it works then you'll see the correct characters on the screen.
 
 I also made a YouTube video briefly documenting my progress and demonstrating the workings of the computer. (https://youtu.be/8I7XNCFC5iU)
 
