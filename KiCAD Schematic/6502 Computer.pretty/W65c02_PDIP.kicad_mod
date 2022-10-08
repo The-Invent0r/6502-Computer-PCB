@@ -1,0 +1,8 @@
+(module W65c02_PDIP (layer F.Cu) (tedit 62F6F689)
+  (fp_text reference REF** (at 0 0.5) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text value W65c02_PDIP (at 0 35.306) (layer F.Fab)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+)
